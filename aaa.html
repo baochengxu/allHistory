@@ -1,0 +1,4 @@
+function(e) {
+                    for (var t = e.length, n = [], i = 0; i < t; i++)
+                        n[i >>> 2] |= (255 & e.charCodeAt(i)) << 24 - i % 4 * 8;
+                    return new a.init(n,t)
